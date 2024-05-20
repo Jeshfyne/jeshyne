@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+body {
+  background: url("bg-home.jpg") no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Righteous", sans-serif;
+  overflow: hidden;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.603);
+  backdrop-filter: blur(5px);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 10vh;
+  justify-content: center;
+}
+
+.hamburger{
+  width: 30px;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.5s;
+
+}
+
+
+.hamburger i{
+font-size: 32px;
+color: white;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 3px;
+  font-family: "Righteous", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: linear-gradient(
+    90deg,
+    #ff7e5f,
+    #feb47b,
+    #ffdb7d,
+    #f5ec7e,
+    #c7f2e3,
+    #82e9de,
+    #7ed6f2,
+    #7b8af2,
+    #8a78f2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animateGradient 5s linear infinite;
+}
+
+.logo-container .icon {
+  font-size: 24px;
+  background: linear-gradient(
+    90deg,
+    #ff7e5f,
+    #feb47b,
+    #ffdb7d,
+    #f5ec7e,
+    #c7f2e3,
+    #82e9de,
+    #7ed6f2,
+    #7b8af2,
+    #8a78f2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animateGradient 5s linear infinite;
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.logo-container {
+  font-size: 20px;
+  display: flex;
+}
+
+.logo-container .icon {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  list-style: none;
+  margin-right: 20px;
+  color: rgb(104, 104, 104);
+}
+
+.nav-links ul li a.active {
+  list-style: none;
+  display: flex;
+  color: white;
+}
+
+.nav-links ul li a:hover {
+  transition: 0.4s;
+  color: white;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+}
+
+main {
+  background-color: rgba(44, 0, 48, 0.644);
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  width: 60%;
+  height: 75vh;
+  background-color: rgba(255, 255, 255, 0.534);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  width: 55%;
+  height: 10%;
+  font-size: 42px;
+  align-items: center;
+  justify-content: center;
+}
+
+.email {
+  margin-top: 30px;
+  background-color: #ffffff;
+  width: 45%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-size: 25px;
+}
+
+.title .icon-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon-contact {
+  font-size: 64px;
+}
+.title-h1 {
+  margin-left: 6px;
+}
+
+.email .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-add {
+  margin-left: 12px;
+}
+
+.email:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  background-color: rgb(44, 44, 44);
+  color: white;
+}
+
+.socials {
+  margin-top: 30px;
+  width: 50%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: rgb(236, 78, 165);
+}
+
+.socials a {
+  font-size: 58px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.socials div {
+  display: flex;
+  align-items: center;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1080px) {
+
+  .nav-links ul {
+
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    background-color: #2e0900;
+    z-index: 5555;
+    top: 50px;
+    right: 0;
+    padding: 5%;
+  }
+
+  .hamburger{
+    display: flex;
+  }
+
+  header{
+    padding: 5vh;
+  }
+  .email {
+
+    width: 100%;
+
+  }
+  .socials {
+
+    width: 100%;
+  
+  }
+
+  .contact-container {
+    width: 90%;
+    padding: 10%;;
+
+  }
+  main {
+    background-color: rgba(44, 0, 48, 0.644);
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .title {
+
+    width: 100%;
+ 
+  }
+  
+  
+  
+}
